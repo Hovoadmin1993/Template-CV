@@ -1,0 +1,29 @@
+.sectop{
+    i{
+        color: $color_icon;
+        margin-right: 16px;
+    }
+    p{
+        margin: 10px 0;
+    }
+    h1{
+        color: $color_text;
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 40px;
+    }
+    .par1{
+        color: $color_text;
+        font-size: 18px;
+    }
+    .par2{
+        font-size: 16px;
+        color: $color_icon;
+        span{
+            color: #fff;
+            padding:2px 8px;
+            border-radius: 4px;
+            background-color: $color_icon;
+        }
+    }
+}

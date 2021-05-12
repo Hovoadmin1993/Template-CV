@@ -1,0 +1,26 @@
+@mixin hr() {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+}
+
+@mixin aft_bef() {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 20px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+
+@mixin bef_aft() {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 30px;
+    border-radius: 16px;
+}

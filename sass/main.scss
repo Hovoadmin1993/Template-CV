@@ -1,0 +1,63 @@
+@import "variables";
+@import "mixins";
+@import "description";
+@import "sectop";
+@import "secbottom";
+@import "footer";
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: $bgc;
+}
+
+.main_container {
+    font-family: "Roboto", sans-serif;
+    display: grid;
+    min-height: 100vh; 
+    max-width: 1400px;
+    margin:20px auto;
+    grid-template-columns: 30% 1fr;
+  grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    grid-template-areas: 
+    "description sectop"
+    "description secbottom"
+    ;
+    @media screen and(max-width:900px) {
+        grid-template-areas: 
+    "description"
+    "sectop"
+    "secbottom"
+    ;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    
+    .description{
+        grid-area: description;
+        box-shadow: 0 4px 10px 0 rgb(163, 162, 162);
+        background-color: #fff;
+    }
+
+    .sectop{
+        grid-area: sectop;
+        padding: 20px;
+        box-shadow: 0 4px 10px 0 rgb(163, 162, 162);
+        background-color: #fff;
+    }
+
+    .secbottom{
+        grid-area: secbottom;
+        padding: 20px;
+        box-shadow: 0 4px 10px 0 rgb(163, 162, 162);
+        background-color: #fff;
+    }
+
+}
+
+hr{
+    @include hr;
+}

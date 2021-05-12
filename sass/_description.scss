@@ -1,0 +1,149 @@
+.img{
+    position: relative;
+    img{
+        width: 100%;
+    }
+    h2{
+        position: absolute;
+        left: 20px;
+        bottom: 0;
+        font-weight: 400;
+        font-size: 30px;
+    }
+}
+
+.desc_container{
+    padding: 15px;
+    color: $color_text;
+    i{
+        color: $color_icon;
+        margin-right: 16px;
+        font-size: 18px;
+    }
+    .fa-phone{
+        transform: rotateY(180deg);
+    }
+    .prg2{
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .prg3{
+        position: relative;
+        padding-bottom: 40px;
+        &::before{
+            content: "";
+            width: 100%;
+            background-color: $bgc;
+            @include aft_bef;
+        }
+        &::after{
+            content: "90%";
+            width: 90%;
+            background-color: $color_icon;
+            color: #fff;
+            @include aft_bef;
+        }
+    }
+
+    .prg4{
+        position: relative;
+        padding-bottom: 40px;
+        &::before{
+            content: "";
+            width: 100%;
+            background-color: $bgc;
+            @include aft_bef;
+        }
+        &::after{
+            content: "80%";
+            width: 80%;
+            background-color: $color_icon;
+            color: #fff;
+            @include aft_bef;
+        }
+    }
+
+    .prg5{
+        position: relative;
+        padding-bottom: 40px;
+        &::before{
+            content: "";
+            width: 100%;
+            background-color: $bgc;
+            @include aft_bef;
+        }
+        &::after{
+            content: "75%";
+            width: 75%;
+            background-color: $color_icon;
+            color: #fff;
+            @include aft_bef;
+        }
+    }
+
+    .prg6{
+        position: relative;
+        padding-bottom: 40px;
+        &::before{
+            content: "";
+            width: 100%;
+            background-color: $bgc;
+            @include aft_bef;
+        }
+        &::after{
+            content: "50%";
+            width: 50%;
+            background-color: $color_icon;
+            color: #fff;
+            @include aft_bef;
+        }
+    }
+
+    .prg7{
+        position: relative;
+        padding-bottom: 47px;
+        &::before{
+            width: 100%;
+            background-color: $bgc;
+            @include bef_aft;
+        }
+        &::after{
+            width: 100%;
+            background-color: $color_icon;
+            color: #fff;
+            @include bef_aft;
+        }
+    }
+
+    .prg8{
+        position: relative;
+        padding-bottom: 47px;
+        &::before{
+            width: 100%;
+            background-color: $bgc;
+            @include bef_aft;
+        }
+        &::after{
+            width: 55%;
+            background-color: $color_icon;
+            color: #fff;
+            @include bef_aft;
+        }
+    }
+
+    .prg9{
+        position: relative;
+        padding-bottom: 47px;
+        &::before{
+            width: 100%;
+            background-color: $bgc;
+            @include bef_aft;
+        }
+        &::after{
+            width: 25%;
+            background-color: $color_icon;
+            color: #fff;
+            @include bef_aft;
+        }
+    }
+}
